@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+/* Smooth scrolling and scroll behavior fixes */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Ensure fixed elements don't interfere with scrolling */
+.fixed {
+  will-change: transform;
+}
